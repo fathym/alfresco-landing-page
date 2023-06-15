@@ -2,9 +2,11 @@ name: fathym/alfresco-landing-page
 
 on:
   push:
-    branches: [main,integration]
+    branches: [main]
   pull_request:
-    branches: [main,integration]
+    branches: [main]
+  repository_dispatch:
+    types: [plasmic]  
   workflow_dispatch:
 
 permissions: write-all
